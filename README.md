@@ -18,6 +18,15 @@ In PSQL:
 * CREATE TABLE news 
 ## Known Bugs
 There are no bugs in the application.
+##images
+
+
+
+![](src/main/resources/public/images/screen1.png)
+![](src/main/resources/public/images/screen2.png)
+![](src/main/resources/public/images/screen3.png)
+![](src/main/resources/public/images/screen4.png)
+![](src/main/resources/public/images/screen5.png)
 
 ## Technologies Used
 * Java
