@@ -17,8 +17,8 @@ In PSQL:
 * CREATE TABLE departements 
 * CREATE TABLE news 
 ## Known Bugs
-There no bugs in the application.
-Failed to deploy on heroku.
+There are no bugs in the application.
+
 ## Technologies Used
 * Java
 * Spark Java
