@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Organisation News{{/block}}</title>
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/css/styles.css'>
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+            <link rel="stylesheet" href="file.css">
+            <link href="https://fonts.googleapis.com/css?family=Rokkitt&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Rokkitt&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="nav">
+<div class="topnav " >
+          <ul style="background-color: rgba(12,32,56);">
+              <li><a href="/">Home</a></li>
+              <li><a href="/departments">Departments</a></li>
+              <li><a href="/users">Add user</a></li>
+              <li><a href="/news">Add Specific news</a></li>
+
+          </ul>
+      </div>
+      </div>
+    <div class="container">
+        <div class="col-md-8 offset-md-2">
+            {{#block "content"}}
+            {{/block}}
+
+        </div>
+    </div>
+</div>
+<style>
+
+body{
+
+     background-image:url('https://ak5.picdn.net/shutterstock/videos/4163605/thumb/1.jpg');
+        background-repeat:no-repeat;
+        background-size:cover;
+        font-family: 'Lobster Two', cursive;
+
+
+}
+.nav{
+ margin: 0;
+    padding: 0;
+}
+.topnav{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-left: 45%;
+
+
+}
+.topnav ul{
+    height: 90px;
+    width: 700px;
+    list-style-type: none;
+   font-family: 'Rokkitt', serif;
+
+    animation: animate 20s linear;
+   box-shadow: 2px 2px 15px 0px rgba(12,32,56);;
+    border-style: none;
+    border-radius: 20px;
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+.topnav li a{
+    color: white;
+    display: flex;
+    float: left;
+    padding: 30px;
+    font-size: 18px;
+
+}
+ .topnav li:hover{
+    color:darkred;
+    background-color: transparent;
+    border-radius: 10px;
+}
+@keyframes animate{
+    0%{
+      box-shadow: 2px 2px 15px 3px rgba(12,32,56);;
+    }
+     5%{
+        box-shadow: 2px 2px 16px 3px red;
+    }
+     10%{
+      box-shadow: 2px 2px 17px 3px Aquamarine;
+    }
+     15%{
+       box-shadow: 2px 2px 18px 3px seashell;
+    }
+     20%{
+       box-shadow: 2px 2px 19px 3px maroon;
+    }
+    25%{
+      box-shadow: 2px 2px 19px 3px green;
+    }
+     30%{
+      box-shadow: 2px 2px 18px 3px darkorange;
+    }
+     35%{
+       box-shadow: 2px 2px 27px 3px deeppink;
+    }
+     40%{
+       box-shadow: 2x 2px 16px 3px Snow;
+    }
+     45%{
+       box-shadow: 2px 2px 15px 3px IndianRed;
+    }
+    50%{
+       box-shadow: 2px 2px 16px 3px Cornsilk;
+
+     55%{
+       box-shadow: 2px 2px 17px 3px GreenYellow;
+    }
+     60%{
+       box-shadow: 2px 2px 18px 3px Teal;
+    } 65%{
+       box-shadow: 2px 2px 19px 3px NavajoWhite;
+    }
+     70%{
+       box-shadow: 2px2px 18px 3px YellowGreen;
+    }
+     75%{
+       box-shadow: 2px 2px 17px 3px DarkTurquoise;
+    }
+     80%{
+      box-shadow: 2px 2px 16px 3px DarkSlateGray;
+    }
+     85%{
+       box-shadow: 2px2px 15px 3px Plum;
+    }
+     90%{
+       box-shadow: 2px 2px 14px 3px ForestGreen;
+    }
+     95%{
+       box-shadow: 2px 2px 13px 3px Purple;
+    }
+       100%{
+       box-shadow: 2px 2px 12px 3px DarkSlateBlue	;
+}
+
+}
+
+
+</style>
+
+{{#block "footer"}}
+<div class="footer">
+  <p>Esther Carrelle...copyright</p>
+</div>
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+</style>
+    </body>
+    </html>
+{{/block}}

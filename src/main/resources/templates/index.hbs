@@ -1,0 +1,52 @@
+{{#partial "content"}}
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link rel="stylesheet" href="file.css">
+            </head>
+    <body>
+<div class="well" style="height:70%;opacity:0.8;width:100%;margin-left:10%">
+
+   <img src="http://www.traumasoft.com/wp-content/uploads/2018/09/breaking-news-banner-png-7-1.png" width=100% >
+</div>
+<div class="well" style="background-color:black;color:white;margin-top:10%;margin-left:10%">
+
+
+    <h1>Add general News</h1>
+    <br>
+    <br>
+
+    <form action="/general/news" method="post" >
+        <div class="form-group">
+            <label>New:</label>
+            <input type="text" name="news" class="form-control" required>
+        </div>
+
+        <button type="submit" class="button btn-success">Submit</button>
+    </form>
+  </div>
+    <br>
+    <br>
+
+
+  {{#each news}}
+         <div class="well" style="background-color:black;color:white;margin-top:10%;margin-left:70%;width:80%">
+                <p>{{news}}</p>
+
+
+         </div>
+        {{/each}}
+
+<!-- Card -->
+
+
+    </body>
+    <style>
+    </style>
+</html>
+
+
+
+{{/partial}}
+
+{{> layout.hbs}}

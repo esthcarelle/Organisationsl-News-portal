@@ -1,0 +1,42 @@
+{{#partial "content"}}
+
+<div class="well" style="background-color:black;color:white;margin-top:10%">
+
+
+    <h1>All News</h1>
+    <br>
+    <br>
+
+    <form action="/general/news" method="post" >
+        <div class="form-group">
+            <label>New:</label>
+            <input type="text" name="news" class="form-control" required>
+        </div>
+
+        <button type="submit" class="button btn-success">Submit</button>
+    </form>
+  </div>
+    <br>
+    <br>
+
+<div class="well">
+    <table class="table">
+        <tr>
+            <th scope="col">Content</th>
+
+
+
+        </tr>
+        {{#each news}}
+
+            <tr>
+                <td>{{news}}</td>
+
+
+            </tr>
+        {{/each}}
+    </table>
+    </div>
+
+{{/partial}}
+{{>layout.hbs}}
